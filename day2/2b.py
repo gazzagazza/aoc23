@@ -3,10 +3,6 @@
 file1 = open('data.txt', 'r')
 Lines = file1.readlines()
 
-cube_map = {"red": 12, "green": 13, "blue": 14}
-
-total_count = 0
-
 games = 3
 game_total = 0
 
@@ -19,7 +15,7 @@ for line in Lines:
     sub_game_line = game_line.split(";")
 
     sub_game_line_count = 0
-    game_valid = True
+
     while sub_game_line_count < games:    
         for x in sub_game_line:
 
